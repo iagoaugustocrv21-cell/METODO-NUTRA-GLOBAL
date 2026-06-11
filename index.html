@@ -13,13 +13,13 @@
 html{scroll-behavior:smooth}
 body{background:var(--dark);color:var(--text);font-family:'Barlow',sans-serif;font-size:16px;line-height:1.65;overflow-x:hidden}
 
-/* ── NAV ── */
+/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;background:rgba(7,9,13,0.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,168,76,0.12)}
 .nlogo img{height:30px;width:auto;display:block}
 .ncta{background:var(--gold);color:#07090D;border:none;border-radius:3px;padding:9px 18px;font-size:13px;font-weight:800;cursor:pointer;text-decoration:none;font-family:'Barlow',sans-serif;letter-spacing:0.03em;transition:background .2s;white-space:nowrap}
 .ncta:hover{background:var(--gold-l)}
 
-/* ── HERO ── */
+/* HERO */
 .hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;padding:64px 0 52px}
 .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 8%;opacity:0.45}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,9,13,1) 45%,rgba(7,9,13,0.55) 72%,rgba(7,9,13,0.1) 100%)}
@@ -33,7 +33,7 @@ h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(68px,17vw,110px);line-hei
 h1 em{color:var(--gold);font-style:normal}
 .hsub{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.65;max-width:320px}
 .hsub strong{color:var(--text);font-weight:600}
-.hnums{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-bottom:28px;border:1px solid rgba(201,168,76,0.12);border-radius:6px;overflow:hidden}
+.hnums{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-bottom:28px;border:1px solid rgba(201,168,76,0.15);border-radius:6px;overflow:hidden;background:rgba(7,9,13,0.5)}
 .hn{padding:12px 10px;border-right:1px solid rgba(201,168,76,0.12)}
 .hn:last-child{border-right:none}
 .hn-v{font-family:'Bebas Neue',sans-serif;font-size:clamp(20px,5.5vw,28px);color:var(--gold);line-height:1;letter-spacing:0.03em}
@@ -43,7 +43,7 @@ h1 em{color:var(--gold);font-style:normal}
 .hnote{font-size:11px;color:var(--dim);margin-top:10px;display:flex;align-items:center;gap:6px;justify-content:center}
 .hnote::before{content:'';width:6px;height:6px;border-radius:50%;background:#2ECC71;flex-shrink:0}
 
-/* ── SECTIONS ── */
+/* SECTIONS */
 .sec{padding:60px 18px}
 .sec-d2{background:var(--d2)}
 .sec-d3{background:var(--d3)}
@@ -52,35 +52,29 @@ h1 em{color:var(--gold);font-style:normal}
 h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,9vw,68px);line-height:0.93;letter-spacing:0.02em;color:var(--text);margin-bottom:20px}
 h2 em{color:var(--gold);font-style:normal}
 
-/* ── REALITY ── */
+/* ── CAROUSEL ── */
+.carousel-wrap{position:relative;overflow:hidden;border-radius:10px;border:1px solid rgba(201,168,76,0.1)}
+.carousel-track{display:flex;transition:transform 0.5s ease;will-change:transform}
+.carousel-track img{width:100%;flex-shrink:0;display:block;object-fit:contain;background:#07090D;max-height:80vw}
+.carousel-dots{display:flex;justify-content:center;gap:6px;margin-top:12px}
+.carousel-dots span{width:6px;height:6px;border-radius:50%;background:rgba(201,168,76,0.25);cursor:pointer;transition:background .2s}
+.carousel-dots span.active{background:var(--gold)}
+.carousel-label{text-align:center;margin-top:8px;font-size:11px;color:var(--dim);min-height:16px}
+
+/* reality text */
 .reality-text p{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:14px}
 .reality-text p strong{color:var(--text)}
 .reality-text p em{color:var(--gold);font-style:normal;font-weight:600}
-/* Mobile: single column proofs */
-.screens{display:flex;flex-direction:column;gap:8px;margin-top:28px}
-.sc{border:1px solid rgba(201,168,76,0.1);border-radius:8px;overflow:hidden}
-.sc img{width:100%;display:block;object-fit:cover;object-position:top center}
-.sc img.tall-sc{height:auto;max-height:320px;object-fit:cover}
-.cta-block{margin-top:24px}
-.cta-inline{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:#07090D;font-family:'Barlow',sans-serif;font-weight:800;font-size:14px;padding:14px 20px;border-radius:3px;text-decoration:none;letter-spacing:0.02em;transition:all .2s;width:100%}
-.cta-inline:hover{background:var(--gold-l)}
+.reality-text{margin-bottom:32px}
 
-/* ── GALLERY ── */
-.gal-grid{display:flex;flex-direction:column;gap:12px;margin-top:28px}
-.gal-card{border-radius:10px;overflow:hidden;position:relative;border:1px solid rgba(201,168,76,0.1)}
-.gal-card img{width:100%;height:220px;object-fit:cover;display:block}
-.gal-cap{position:absolute;bottom:0;left:0;right:0;padding:12px 14px;background:linear-gradient(to top,rgba(7,9,13,0.95) 0%,transparent 100%)}
-.gal-cap strong{color:var(--gold-l);display:block;font-size:13px;font-family:'Bebas Neue',sans-serif;letter-spacing:0.06em;margin-bottom:2px}
-.gal-cap span{font-size:11px;color:var(--muted)}
-
-/* ── FOR YOU ── */
+/* for you */
 .filist{display:flex;flex-direction:column;gap:10px;margin-top:28px}
 .fi{display:flex;align-items:flex-start;gap:14px;background:var(--d3);border:1px solid rgba(255,255,255,0.04);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:16px 18px}
 .fi-n{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--gold);line-height:1;min-width:26px}
 .fi strong{color:var(--text);font-size:14px;font-weight:700;display:block;margin-bottom:3px}
 .fi span{color:var(--muted);font-size:13px;line-height:1.55}
 
-/* ── SEI ── */
+/* sei */
 .sei-box{background:var(--d3);border:1px solid rgba(201,168,76,0.12);border-radius:12px;padding:28px 18px;text-align:center}
 .sei-lead{font-size:15px;color:var(--muted);margin:0 auto 28px;line-height:1.75}
 .sei-lead strong{color:var(--text)}
@@ -90,35 +84,28 @@ h2 em{color:var(--gold);font-style:normal}
 .sei-closer{font-size:15px;color:var(--muted);margin-bottom:4px}
 .sei-punch{font-family:'Bebas Neue',sans-serif;font-size:clamp(30px,7.5vw,50px);color:var(--text);letter-spacing:0.03em;margin-bottom:24px;line-height:1}
 .sei-punch em{color:var(--gold);font-style:normal}
+
+/* buttons */
 .cbig{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--gold);color:#07090D;font-family:'Barlow',sans-serif;font-weight:800;font-size:16px;padding:18px 24px;border-radius:3px;text-decoration:none;letter-spacing:0.02em;transition:all .2s;width:100%}
 .cbig:hover{background:var(--gold-l)}
+.cta-inline{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:#07090D;font-family:'Barlow',sans-serif;font-weight:800;font-size:14px;padding:14px 20px;border-radius:3px;text-decoration:none;letter-spacing:0.02em;transition:all .2s;width:100%;margin-top:24px}
+.cta-inline:hover{background:var(--gold-l)}
 
-/* ── MENTOR ── */
+/* mentor */
 .mpw{position:relative;margin-bottom:24px}
-.mphoto{width:100%;border-radius:10px;display:block;border:1px solid rgba(201,168,76,0.15);height:300px;object-fit:cover;object-position:50% 30%}
+.mphoto{width:100%;border-radius:10px;display:block;border:1px solid rgba(201,168,76,0.15);height:300px;object-fit:cover;object-position:50% 20%}
 .mbadge{position:absolute;bottom:14px;left:14px;right:14px;background:rgba(7,9,13,0.94);border:1px solid rgba(201,168,76,0.25);border-radius:7px;padding:11px 14px;backdrop-filter:blur(10px)}
 .mbv{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--gold);line-height:1;letter-spacing:0.03em}
 .mbl{font-size:11px;color:var(--muted);margin-top:2px}
 .mt p{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:14px}
 .mt p strong{color:var(--text)}
 .mt p em{color:var(--gold);font-style:normal;font-weight:600}
-.mstats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06);border:1px solid rgba(201,168,76,0.1);border-radius:6px;overflow:hidden}
-.ms{padding:14px 10px;text-align:center;border-right:1px solid rgba(201,168,76,0.1)}
-.ms:last-child{border-right:none}
+.mstats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06)}
+.ms{padding:0 0 0 0;text-align:left}
 .ms-v{font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,4.5vw,26px);color:var(--gold);letter-spacing:0.03em;line-height:1}
 .ms-l{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:0.08em;margin-top:3px}
 
-/* ── PROOFS ── */
-.pr-lbl{text-align:center;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--dim);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:10px}
-.pr-lbl::before,.pr-lbl::after{content:'';flex:1;max-width:36px;height:1px;background:rgba(201,168,76,0.15)}
-.pr-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.pcard{background:var(--d4);border:1px solid rgba(201,168,76,0.08);border-radius:8px;overflow:hidden}
-.pcard img{width:100%;display:block;height:130px;object-fit:cover;object-position:top center}
-.pcard-info{padding:9px 11px}
-.pcard-v{font-family:'Bebas Neue',sans-serif;font-size:16px;color:var(--gold);letter-spacing:0.03em;line-height:1.1}
-.pcard-d{font-size:10px;color:var(--dim);margin-top:2px;line-height:1.3}
-
-/* ── FINAL ── */
+/* final */
 .final-wrap{text-align:center}
 .final-wrap h2{font-size:clamp(40px,10vw,88px);margin-bottom:16px}
 .final-wrap p{font-size:15px;color:var(--muted);margin:0 auto 28px;line-height:1.75}
@@ -126,46 +113,33 @@ h2 em{color:var(--gold);font-style:normal}
 .fnote{margin-top:14px;font-size:11px;color:var(--dim);display:flex;align-items:center;justify-content:center;gap:6px}
 .fnote::before{content:'';width:6px;height:6px;border-radius:50%;background:#2ECC71}
 
-/* ── FOOTER ── */
 footer{background:var(--dark);border-top:1px solid rgba(255,255,255,0.05);padding:20px 18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:11px;color:var(--dim)}
 .fmethod{font-size:9px;color:var(--dim);letter-spacing:0.08em;text-transform:uppercase;margin-top:2px}
 
-/* ── DESKTOP ── */
+/* DESKTOP */
 @media(min-width:768px){
   nav{padding:14px 48px}
   .nlogo img{height:36px}
-  .ncta{padding:10px 24px;font-size:14px}
   .hc{padding:0 64px;max-width:680px}
   .hero-img{opacity:0.62;-webkit-mask-image:linear-gradient(to right,transparent 0%,black 40%),linear-gradient(to top,black 50%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,black 40%),linear-gradient(to top,black 50%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}
   .hero-overlay{background:linear-gradient(90deg,rgba(7,9,13,1) 34%,rgba(7,9,13,0.45) 60%,rgba(7,9,13,0.05) 100%)}
-  .hlogo{height:52px;margin-bottom:12px}
-  .hnums{display:flex;gap:36px;border:none;border-radius:0;overflow:visible}
+  .hlogo{height:52px}
+  .hnums{display:flex;gap:36px;border:none;border-radius:0;background:transparent}
   .hn{padding:0;border-right:none}
-  .hn-v{font-size:32px}
-  .hn-l{font-size:11px}
-  .hcta{width:auto;display:inline-flex;font-size:16px;padding:17px 40px}
+  .hcta{width:auto;display:inline-flex}
   .hnote{justify-content:flex-start}
   .sec{padding:90px 64px}
-  .reality-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-  .screens{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:0}
-  .sc img{max-height:none}
-  .sc-tall{grid-row:span 2}
-  .cta-inline{width:auto;display:inline-flex;margin-top:0}
-  .cta-block{margin-top:28px}
-  .gal-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
-  .gal-card img{height:300px}
-  .gal-wide{grid-column:span 2}
-  .gal-wide img{height:380px}
+  .carousel-track img{max-height:500px}
+  .reality-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+  .reality-text{margin-bottom:0}
   .mentor-grid{display:grid;grid-template-columns:400px 1fr;gap:72px;align-items:start}
   .mpw{margin-bottom:0}
-  .mphoto{height:480px;object-position:50% 20%}
-  .mstats{margin-top:0;border:none;border-top:1px solid rgba(255,255,255,0.06);border-radius:0;padding-top:24px;display:flex;gap:32px}
-  .ms{padding:0;border-right:none;text-align:left}
-  .pr-grid{grid-template-columns:repeat(4,1fr);gap:12px}
-  .pcard img{height:auto}
+  .mphoto{height:480px}
+  .mstats{display:flex;gap:32px}
   .sei-box{padding:56px 48px}
   .sei-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-  .cbig{width:auto;display:inline-flex;font-size:17px;padding:20px 52px}
+  .cbig{width:auto;display:inline-flex}
+  .cta-inline{width:auto;display:inline-flex;margin-top:0}
   footer{padding:24px 64px}
 }
 </style>
@@ -211,44 +185,40 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,0.05);paddin
       <p>Os prints abaixo são da minha operação rodando <strong>agora mesmo</strong>, do Brasil, vendendo nutraceuticos para o mundo.</p>
       <p>Sem edição. Sem filtro. <em>Isso é o que acontece quando você entra no mercado certo, na hora certa.</em></p>
       <p>Ticket alto, produto com demanda gigantesca na Europa e nos EUA — e o brasileiro ainda mal descobriu esse mercado.</p>
-      <div class="cta-block">
-        <a href="https://form.typeform.com/to/okwEajEE" target="_blank" class="cta-inline">Quero entrar nesse mercado →</a>
-      </div>
+      <a href="https://form.typeform.com/to/okwEajEE" target="_blank" class="cta-inline">Quero entrar nesse mercado →</a>
     </div>
-    <div class="screens">
-      <div class="sc sc-tall"><img src="images/fat2025.jpg" alt="R$34M 2025" loading="lazy" class="tall-sc" style="height:100%;max-height:260px"></div>
-      <div class="sc"><img src="images/chart352.jpg" alt="R$352k gráfico" loading="lazy" style="height:120px"></div>
-      <div class="sc"><img src="images/notif_multi.jpg" alt="Notificações" loading="lazy" style="height:120px;object-position:top center"></div>
+    <div>
+      <div class="carousel-wrap" id="car-reality">
+        <div class="carousel-track" id="track-reality">
+          <img src="images/fat2025.jpg" alt="R$34M 2025">
+          <img src="images/chart352.jpg" alt="R$352k gráfico">
+          <img src="images/roas808.jpg" alt="ROAS 8.08">
+          <img src="images/notif_multi.jpg" alt="Vendas multi-moeda">
+          <img src="images/dash_lucro.jpg" alt="R$3.3M lucro">
+          <img src="images/v96.jpg" alt="R$96k dia">
+        </div>
+      </div>
+      <div class="carousel-dots" id="dots-reality"></div>
+      <div class="carousel-label" id="label-reality"></div>
     </div>
   </div>
 </div>
 
-<!-- GALLERY -->
+<!-- GALLERY CAROUSEL -->
 <div class="sec">
   <div class="ey">O estilo de vida que isso gera</div>
   <h2>DO BRASIL PARA<br><em>O MUNDO INTEIRO</em></h2>
-  <div class="gal-grid">
-    <div class="gal-card gal-wide">
-      <img src="images/dubai.jpg" alt="Dubai" style="object-position:50% 35%" loading="lazy">
-      <div class="gal-cap"><strong>Dubai, Emirados Árabes</strong><span>Operação rodando de qualquer lugar</span></div>
-    </div>
-    <div class="gal-card">
-      <img src="images/lambo.jpg" alt="Dubai Lamborghini" style="object-position:50% 30%" loading="lazy">
-      <div class="gal-cap"><strong>Dubai · Bastidores</strong><span>Liberdade financeira real</span></div>
-    </div>
-    <div class="gal-card">
-      <img src="images/como.jpg" alt="Lago de Como" style="object-position:50% 55%" loading="lazy">
-      <div class="gal-cap"><strong>Lago de Como, Itália</strong><span>Liberdade geográfica total</span></div>
-    </div>
-    <div class="gal-card">
-      <img src="images/paris.jpg" alt="Paris" style="object-position:50% 35%" loading="lazy">
-      <div class="gal-cap"><strong>Paris, França</strong><span>R$352k no dia, Torre Eiffel à noite</span></div>
-    </div>
-    <div class="gal-card">
-      <img src="images/bsas.jpg" alt="Buenos Aires" style="object-position:50% 12%" loading="lazy">
-      <div class="gal-cap"><strong>Buenos Aires, Argentina</strong><span>Negócios sem fronteiras</span></div>
+  <div class="carousel-wrap" id="car-gallery">
+    <div class="carousel-track" id="track-gallery">
+      <img src="images/dubai.jpg" alt="Dubai, Emirados Árabes">
+      <img src="images/lambo.jpg" alt="Dubai · Bastidores">
+      <img src="images/como.jpg" alt="Lago de Como, Itália">
+      <img src="images/paris.jpg" alt="Paris, França">
+      <img src="images/bsas.jpg" alt="Buenos Aires, Argentina">
     </div>
   </div>
+  <div class="carousel-dots" id="dots-gallery"></div>
+  <div class="carousel-label" id="label-gallery"></div>
 </div>
 
 <!-- FOR YOU -->
@@ -291,7 +261,7 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,0.05);paddin
 <div class="sec sec-d2">
   <div class="mentor-grid">
     <div class="mpw">
-      <img src="images/como.jpg" alt="Iago Lolobrigida — Lago de Como" class="mphoto" loading="lazy">
+      <img src="images/como.jpg" alt="Iago Lolobrigida" class="mphoto" loading="lazy">
       <div class="mbadge">
         <div class="mbv">R$100M+ Faturados</div>
         <div class="mbl">No mercado global de nutraceuticos</div>
@@ -312,19 +282,23 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,0.05);paddin
   </div>
 </div>
 
-<!-- PROOFS -->
+<!-- PROOFS CAROUSEL -->
 <div class="sec sec-d3">
-  <div class="pr-lbl">Resultados reais · Sem edição · Sem filtro</div>
-  <div class="pr-grid">
-    <div class="pcard"><img src="images/v352.jpg" loading="lazy"><div class="pcard-info"><div class="pcard-v">R$352.345</div><div class="pcard-d">1 dia · 216 pedidos</div></div></div>
-    <div class="pcard"><img src="images/roas808.jpg" loading="lazy"><div class="pcard-info"><div class="pcard-v">ROAS 8.08</div><div class="pcard-d">Lucro R$15.754</div></div></div>
-    <div class="pcard"><img src="images/notif_multi.jpg" loading="lazy" style="object-position:top"><div class="pcard-info"><div class="pcard-v">$, £, € ao vivo</div><div class="pcard-d">Vendas multi-moeda</div></div></div>
-    <div class="pcard"><img src="images/notif3.jpg" loading="lazy"><div class="pcard-info"><div class="pcard-v">Vendas 24h</div><div class="pcard-d">Operando enquanto dorme</div></div></div>
-    <div class="pcard"><img src="images/v96.jpg" loading="lazy"><div class="pcard-info"><div class="pcard-v">R$96.840</div><div class="pcard-d">51 pedidos no dia</div></div></div>
-    <div class="pcard"><img src="images/notif.jpg" loading="lazy"><div class="pcard-info"><div class="pcard-v">Notificações</div><div class="pcard-d">Vendas aprovadas</div></div></div>
-    <div class="pcard"><img src="images/dash_lucro.jpg" loading="lazy"><div class="pcard-info"><div class="pcard-v">R$3.390.205</div><div class="pcard-d">Lucro líquido</div></div></div>
-    <div class="pcard"><img src="images/fat2025.jpg" loading="lazy"><div class="pcard-info"><div class="pcard-v">R$34.225.501</div><div class="pcard-d">Faturamento 2025</div></div></div>
+  <div class="ey" style="justify-content:center;margin-bottom:20px">Resultados reais · Sem edição · Sem filtro</div>
+  <div class="carousel-wrap" id="car-proofs">
+    <div class="carousel-track" id="track-proofs">
+      <img src="images/v352.jpg" alt="R$352.345 — 1 dia, 216 pedidos">
+      <img src="images/roas808.jpg" alt="ROAS 8.08 — Lucro R$15.754">
+      <img src="images/notif_multi.jpg" alt="$, £, € ao vivo — vendas multi-moeda">
+      <img src="images/notif3.jpg" alt="Vendas 24h — operando enquanto dorme">
+      <img src="images/v96.jpg" alt="R$96.840 — 51 pedidos no dia">
+      <img src="images/notif.jpg" alt="Notificações de venda">
+      <img src="images/dash_lucro.jpg" alt="R$3.390.205 lucro líquido">
+      <img src="images/fat2025.jpg" alt="R$34.225.501 faturamento 2025">
+    </div>
   </div>
+  <div class="carousel-dots" id="dots-proofs"></div>
+  <div class="carousel-label" id="label-proofs"></div>
 </div>
 
 <!-- FINAL CTA -->
@@ -348,5 +322,57 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,0.05);paddin
   </div>
   <div>© 2025 Iago Lolobrigida · Todos os direitos reservados</div>
 </footer>
+
+<script>
+const LABELS = {
+  'car-reality': ['R$34.225.501 faturados em 2025','R$352.345 em um único dia','ROAS 8.08 — Lucro R$15.754','Vendas em $, £, € ao mesmo tempo','R$3.390.205 de lucro líquido','R$96.840 em um dia · 51 pedidos'],
+  'car-gallery': ['Dubai, Emirados Árabes','Dubai · Bastidores','Lago de Como, Itália','Paris, França','Buenos Aires, Argentina'],
+  'car-proofs':  ['R$352.345 — 1 dia, 216 pedidos','ROAS 8.08 — Lucro R$15.754','$, £, € ao vivo — multi-moeda','Vendas 24h — operando enquanto dorme','R$96.840 — 51 pedidos no dia','Notificações de venda aprovada','R$3.390.205 lucro líquido','R$34.225.501 faturamento 2025']
+};
+
+function initCarousel(id, autoMs) {
+  const track = document.getElementById('track-' + id);
+  const dotsEl = document.getElementById('dots-' + id);
+  const labelEl = document.getElementById('label-' + id);
+  if (!track) return;
+
+  const imgs = track.querySelectorAll('img');
+  const total = imgs.length;
+  let current = 0;
+  let timer;
+
+  // Build dots
+  const dots = [];
+  for (let i = 0; i < total; i++) {
+    const d = document.createElement('span');
+    d.addEventListener('click', () => go(i));
+    dotsEl.appendChild(d);
+    dots.push(d);
+  }
+
+  function go(n) {
+    current = (n + total) % total;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    if (labelEl && LABELS[id]) labelEl.textContent = LABELS[id][current] || '';
+    clearInterval(timer);
+    timer = setInterval(() => go(current + 1), autoMs);
+  }
+
+  // Swipe support
+  let startX = 0;
+  track.parentElement.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, {passive:true});
+  track.parentElement.addEventListener('touchend', e => {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) go(current + (diff > 0 ? 1 : -1));
+  }, {passive:true});
+
+  go(0);
+}
+
+initCarousel('reality', 3000);
+initCarousel('gallery', 3500);
+initCarousel('proofs',  2800);
+</script>
 </body>
 </html>
