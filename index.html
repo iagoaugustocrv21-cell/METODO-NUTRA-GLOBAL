@@ -4,344 +4,346 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nutra Global — Iago Lolobrigida</title>
-<meta name="description" content="Método Nutra Global por Iago Lolobrigida. Aprenda a operar no mercado global de nutraceuticos. R$34M+ faturados em 2025.">
+<meta name="description" content="Método Nutra Global por Iago Lolobrigida. R$34M+ faturados em 2025.">
 <link rel="preload" href="images/hero.jpg" as="image">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --gold:#C9A84C;--gold-l:#E8C97A;--gold-d:#8A6A28;
-  --dark:#07090D;--d2:#0D1018;--d3:#131620;--d4:#191D27;
-  --text:#EDEAE2;--muted:#888D9E;--dim:#454B5C;
-}
+:root{--gold:#C9A84C;--gold-l:#E8C97A;--gold-d:#7A6020;--dark:#07090D;--d2:#0D1018;--d3:#131620;--d4:#191D27;--text:#EDEAE2;--muted:#888D9E;--dim:#454B5C}
 html{scroll-behavior:smooth}
 body{background:var(--dark);color:var(--text);font-family:'Barlow',sans-serif;font-size:16px;line-height:1.65;overflow-x:hidden}
 
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;background:rgba(7,9,13,0.95);backdrop-filter:blur(18px);border-bottom:1px solid rgba(201,168,76,0.1)}
-.nlogo img{height:32px;width:auto;display:block}
-.ncta{background:var(--gold);color:#07090D;border:none;border-radius:3px;padding:10px 20px;font-size:14px;font-weight:700;cursor:pointer;text-decoration:none;font-family:'Barlow',sans-serif;letter-spacing:0.02em;transition:background .2s;white-space:nowrap}
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;background:rgba(7,9,13,0.96);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,168,76,0.12)}
+.nlogo img{height:30px;width:auto;display:block}
+.ncta{background:var(--gold);color:#07090D;border:none;border-radius:3px;padding:9px 18px;font-size:13px;font-weight:800;cursor:pointer;text-decoration:none;font-family:'Barlow',sans-serif;letter-spacing:0.03em;transition:background .2s;white-space:nowrap}
 .ncta:hover{background:var(--gold-l)}
 
-/* HERO */
-.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;padding-bottom:56px;padding-top:60px}
-.hbg{position:absolute;inset:0;background:#07090D}
-.hphoto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;opacity:0.35}
-.hover{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,9,13,1) 40%,rgba(7,9,13,0.6) 70%,rgba(7,9,13,0.2) 100%)}
-.hcontent{position:relative;z-index:2;padding:0 20px;width:100%}
-.htag{display:inline-flex;align-items:center;gap:8px;background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.22);border-radius:3px;padding:6px 12px;font-size:11px;font-weight:700;letter-spacing:0.14em;color:var(--gold);text-transform:uppercase;margin-bottom:24px}
+/* ── HERO ── */
+.hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden;padding:64px 0 52px}
+.hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 8%;opacity:0.45}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(7,9,13,1) 45%,rgba(7,9,13,0.55) 72%,rgba(7,9,13,0.1) 100%)}
+.hc{position:relative;z-index:2;padding:0 18px}
+.htag{display:inline-flex;align-items:center;gap:7px;background:rgba(201,168,76,0.08);border:1px solid rgba(201,168,76,0.25);border-radius:3px;padding:5px 12px;font-size:10px;font-weight:700;letter-spacing:0.16em;color:var(--gold);text-transform:uppercase;margin-bottom:20px}
 .htag-dot{width:6px;height:6px;border-radius:50%;background:#2ECC71;flex-shrink:0}
-.hflags{font-size:18px;letter-spacing:4px;margin-bottom:12px}
-.hlogo{height:48px;width:auto;display:block;margin-bottom:12px}
-.method-name{font-size:11px;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold-d);margin-bottom:6px}
-h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(72px,18vw,110px);line-height:0.88;letter-spacing:0.02em;color:var(--text);margin-bottom:18px}
+.hflags{font-size:17px;letter-spacing:3px;margin-bottom:12px}
+.hlogo{height:40px;width:auto;display:block;margin-bottom:10px}
+.hmethod{font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-d);margin-bottom:8px}
+h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(68px,17vw,110px);line-height:0.87;letter-spacing:0.02em;color:var(--text);margin-bottom:16px}
 h1 em{color:var(--gold);font-style:normal}
-.hsub{font-size:16px;color:var(--muted);margin-bottom:32px;line-height:1.65;max-width:340px}
+.hsub{font-size:15px;color:var(--muted);margin-bottom:28px;line-height:1.65;max-width:320px}
 .hsub strong{color:var(--text);font-weight:600}
-
-/* NUMS — 3 in a row on mobile */
-.hnums{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:36px}
-.hn-v{font-family:'Bebas Neue',sans-serif;font-size:clamp(22px,6vw,34px);color:var(--gold);line-height:1;letter-spacing:0.03em}
-.hn-l{font-size:10px;color:var(--dim);letter-spacing:0.08em;text-transform:uppercase;margin-top:3px}
-
-.hcta{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--gold);color:#07090D;font-family:'Barlow',sans-serif;font-weight:800;font-size:16px;padding:17px 28px;border-radius:3px;text-decoration:none;letter-spacing:0.02em;transition:all .2s;border:none;cursor:pointer;width:100%}
+.hnums{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-bottom:28px;border:1px solid rgba(201,168,76,0.12);border-radius:6px;overflow:hidden}
+.hn{padding:12px 10px;border-right:1px solid rgba(201,168,76,0.12)}
+.hn:last-child{border-right:none}
+.hn-v{font-family:'Bebas Neue',sans-serif;font-size:clamp(20px,5.5vw,28px);color:var(--gold);line-height:1;letter-spacing:0.03em}
+.hn-l{font-size:9px;color:var(--dim);letter-spacing:0.07em;text-transform:uppercase;margin-top:3px}
+.hcta{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--gold);color:#07090D;font-family:'Barlow',sans-serif;font-weight:800;font-size:15px;padding:16px 20px;border-radius:3px;text-decoration:none;letter-spacing:0.02em;transition:all .2s;width:100%}
 .hcta:hover{background:var(--gold-l)}
-.hnote{font-size:12px;color:var(--dim);margin-top:12px;display:flex;align-items:center;gap:6px;justify-content:center}
+.hnote{font-size:11px;color:var(--dim);margin-top:10px;display:flex;align-items:center;gap:6px;justify-content:center}
 .hnote::before{content:'';width:6px;height:6px;border-radius:50%;background:#2ECC71;flex-shrink:0}
 
-/* SECTIONS */
-section{padding:72px 20px}
-.container{max-width:1120px;margin:0 auto}
-.ey{font-size:11px;font-weight:700;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:10px}
-.ey::before{content:'';display:block;width:20px;height:1px;background:var(--gold)}
-h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(38px,10vw,72px);line-height:0.93;letter-spacing:0.02em;color:var(--text);margin-bottom:24px}
+/* ── SECTIONS ── */
+.sec{padding:60px 18px}
+.sec-d2{background:var(--d2)}
+.sec-d3{background:var(--d3)}
+.ey{font-size:10px;font-weight:700;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.ey::before{content:'';display:block;width:18px;height:1px;background:var(--gold)}
+h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,9vw,68px);line-height:0.93;letter-spacing:0.02em;color:var(--text);margin-bottom:20px}
 h2 em{color:var(--gold);font-style:normal}
 
-/* REALITY */
-.reality{background:var(--d2)}
-.rt p{font-size:16px;color:var(--muted);line-height:1.8;margin-bottom:16px}
-.rt p strong{color:var(--text)}
-.rt p em{color:var(--gold);font-style:normal;font-weight:600}
-/* prints: single column on mobile */
-.screens{display:flex;flex-direction:column;gap:10px;margin-top:32px}
-.sc{background:var(--d4);border:1px solid rgba(201,168,76,0.1);border-radius:8px;overflow:hidden}
-.sc img{width:100%;display:block;max-height:280px;object-fit:cover;object-position:top center}
-
-/* GALLERY */
-.gallery{background:var(--dark);padding:72px 20px}
-.gal-grid{display:flex;flex-direction:column;gap:14px;margin-top:36px}
-.gal-card{border-radius:10px;overflow:hidden;position:relative;border:1px solid rgba(201,168,76,0.1)}
-.gal-card img{width:100%;height:260px;object-fit:cover;display:block}
-/* override object-position per card via inline */
-.gal-caption{position:absolute;bottom:0;left:0;right:0;padding:14px 16px;background:linear-gradient(to top,rgba(7,9,13,0.92),transparent)}
-.gal-caption strong{color:var(--gold-l);display:block;font-size:14px;font-family:'Bebas Neue',sans-serif;letter-spacing:0.05em}
-.gal-caption span{font-size:12px;color:var(--muted)}
-
-/* FOR YOU */
-.foryou{background:var(--d2)}
-.filist{display:flex;flex-direction:column;gap:12px;margin-top:36px}
-.fi{display:flex;align-items:flex-start;gap:16px;background:var(--d3);border:1px solid rgba(255,255,255,0.04);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:18px 20px;transition:background .2s}
-.fi-n{font-family:'Bebas Neue',sans-serif;font-size:24px;color:var(--gold);line-height:1;min-width:28px;letter-spacing:0.03em}
-.fi strong{color:var(--text);font-size:15px;font-weight:700;display:block;margin-bottom:4px}
-.fi span{color:var(--muted);font-size:14px}
-
-/* SEI */
-.sei{background:var(--dark)}
-.sei-box{background:var(--d3);border:1px solid rgba(201,168,76,0.12);border-radius:12px;padding:36px 20px;text-align:center}
-.sei-lead{font-size:16px;color:var(--muted);margin:0 auto 32px;line-height:1.75}
-.sei-lead strong{color:var(--text)}
-.sei-grid{display:flex;flex-direction:column;gap:10px;margin-bottom:36px}
-.sei-item{background:var(--d4);border:1px solid rgba(255,255,255,0.04);border-radius:8px;padding:14px 16px;display:flex;align-items:center;gap:12px;text-align:left;font-size:14px;color:var(--muted)}
-.sei-item::before{content:'✓';color:var(--gold);font-weight:700;flex-shrink:0}
-.sei-closer{font-size:16px;color:var(--muted);margin-bottom:6px}
-.sei-punch{font-family:'Bebas Neue',sans-serif;font-size:clamp(32px,8vw,52px);color:var(--text);letter-spacing:0.03em;margin-bottom:32px;line-height:1}
-.sei-punch em{color:var(--gold);font-style:normal}
-
-/* MENTOR */
-.mentor{background:var(--d2)}
-.mpw{position:relative;margin-bottom:32px}
-.mphoto{width:100%;border-radius:10px;display:block;border:1px solid rgba(201,168,76,0.15);max-height:420px;object-fit:cover;object-position:center 20%}
-.mbadge{position:absolute;bottom:16px;left:16px;right:16px;background:rgba(7,9,13,0.93);border:1px solid rgba(201,168,76,0.25);border-radius:8px;padding:12px 16px;backdrop-filter:blur(10px)}
-.mbv{font-family:'Bebas Neue',sans-serif;font-size:24px;color:var(--gold);line-height:1;letter-spacing:0.03em}
-.mbl{font-size:12px;color:var(--muted);margin-top:3px}
-.mt p{font-size:16px;color:var(--muted);line-height:1.8;margin-bottom:16px}
-.mt p strong{color:var(--text)}
-.mt p em{color:var(--gold);font-style:normal;font-weight:600}
-.mstats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.05)}
-.ms-v{font-family:'Bebas Neue',sans-serif;font-size:clamp(20px,5vw,32px);color:var(--gold);letter-spacing:0.03em;line-height:1}
-.ms-l{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:0.08em;margin-top:3px}
-
-/* PROOFS */
-.proofs{background:var(--d3);padding:56px 20px}
-.pr-lbl{text-align:center;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--dim);margin-bottom:28px;display:flex;align-items:center;justify-content:center;gap:12px}
-.pr-lbl::before,.pr-lbl::after{content:'';flex:1;max-width:40px;height:1px;background:rgba(201,168,76,0.15)}
-/* 2 col grid on mobile */
-.pr-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:1120px;margin:0 auto}
-.pcard{background:var(--d4);border:1px solid rgba(201,168,76,0.08);border-radius:8px;overflow:hidden}
-.pcard img{width:100%;display:block;height:160px;object-fit:cover;object-position:top center}
-.pcard-info{padding:10px 12px}
-.pcard-v{font-family:'Bebas Neue',sans-serif;font-size:17px;color:var(--gold);letter-spacing:0.03em}
-.pcard-d{font-size:11px;color:var(--dim);margin-top:2px}
-
-/* FINAL */
-.final{background:var(--d2);text-align:center;padding:80px 20px}
-.final h2{font-size:clamp(42px,10vw,92px);margin-bottom:18px}
-.final p{font-size:16px;color:var(--muted);margin:0 auto 36px;line-height:1.75;max-width:320px}
-.final p strong{color:var(--text)}
-.cbig{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--gold);color:#07090D;font-family:'Barlow',sans-serif;font-weight:800;font-size:17px;padding:20px 28px;border-radius:3px;text-decoration:none;letter-spacing:0.02em;transition:all .2s;border:none;cursor:pointer;width:100%;max-width:380px;margin:0 auto}
-.cbig:hover{background:var(--gold-l)}
-.fnote{margin-top:16px;font-size:12px;color:var(--dim);display:flex;align-items:center;justify-content:center;gap:6px}
-.fnote::before{content:'';width:6px;height:6px;border-radius:50%;background:#2ECC71}
-.cta-inline{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--gold);color:#07090D;font-family:'Barlow',sans-serif;font-weight:800;font-size:15px;padding:15px 24px;border-radius:3px;text-decoration:none;letter-spacing:0.02em;transition:all .2s;border:none;cursor:pointer;width:100%;margin-top:28px}
+/* ── REALITY ── */
+.reality-text p{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:14px}
+.reality-text p strong{color:var(--text)}
+.reality-text p em{color:var(--gold);font-style:normal;font-weight:600}
+/* Mobile: single column proofs */
+.screens{display:flex;flex-direction:column;gap:8px;margin-top:28px}
+.sc{border:1px solid rgba(201,168,76,0.1);border-radius:8px;overflow:hidden}
+.sc img{width:100%;display:block;object-fit:cover;object-position:top center}
+.sc img.tall-sc{height:auto;max-height:320px;object-fit:cover}
+.cta-block{margin-top:24px}
+.cta-inline{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:#07090D;font-family:'Barlow',sans-serif;font-weight:800;font-size:14px;padding:14px 20px;border-radius:3px;text-decoration:none;letter-spacing:0.02em;transition:all .2s;width:100%}
 .cta-inline:hover{background:var(--gold-l)}
 
-footer{background:var(--dark);border-top:1px solid rgba(255,255,255,0.04);padding:24px 20px;display:flex;align-items:center;justify-content:space-between;font-size:12px;color:var(--dim);flex-wrap:wrap;gap:12px}
-.fmethod{font-size:10px;color:var(--dim);letter-spacing:0.08em;text-transform:uppercase;margin-top:2px}
+/* ── GALLERY ── */
+.gal-grid{display:flex;flex-direction:column;gap:12px;margin-top:28px}
+.gal-card{border-radius:10px;overflow:hidden;position:relative;border:1px solid rgba(201,168,76,0.1)}
+.gal-card img{width:100%;height:220px;object-fit:cover;display:block}
+.gal-cap{position:absolute;bottom:0;left:0;right:0;padding:12px 14px;background:linear-gradient(to top,rgba(7,9,13,0.95) 0%,transparent 100%)}
+.gal-cap strong{color:var(--gold-l);display:block;font-size:13px;font-family:'Bebas Neue',sans-serif;letter-spacing:0.06em;margin-bottom:2px}
+.gal-cap span{font-size:11px;color:var(--muted)}
 
-/* DESKTOP overrides */
+/* ── FOR YOU ── */
+.filist{display:flex;flex-direction:column;gap:10px;margin-top:28px}
+.fi{display:flex;align-items:flex-start;gap:14px;background:var(--d3);border:1px solid rgba(255,255,255,0.04);border-left:3px solid var(--gold);border-radius:0 8px 8px 0;padding:16px 18px}
+.fi-n{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--gold);line-height:1;min-width:26px}
+.fi strong{color:var(--text);font-size:14px;font-weight:700;display:block;margin-bottom:3px}
+.fi span{color:var(--muted);font-size:13px;line-height:1.55}
+
+/* ── SEI ── */
+.sei-box{background:var(--d3);border:1px solid rgba(201,168,76,0.12);border-radius:12px;padding:28px 18px;text-align:center}
+.sei-lead{font-size:15px;color:var(--muted);margin:0 auto 28px;line-height:1.75}
+.sei-lead strong{color:var(--text)}
+.sei-grid{display:flex;flex-direction:column;gap:8px;margin-bottom:28px}
+.sei-item{background:var(--d4);border:1px solid rgba(255,255,255,0.04);border-radius:7px;padding:13px 16px;display:flex;align-items:center;gap:10px;text-align:left;font-size:13px;color:var(--muted)}
+.sei-item::before{content:'✓';color:var(--gold);font-weight:700;flex-shrink:0}
+.sei-closer{font-size:15px;color:var(--muted);margin-bottom:4px}
+.sei-punch{font-family:'Bebas Neue',sans-serif;font-size:clamp(30px,7.5vw,50px);color:var(--text);letter-spacing:0.03em;margin-bottom:24px;line-height:1}
+.sei-punch em{color:var(--gold);font-style:normal}
+.cbig{display:flex;align-items:center;justify-content:center;gap:10px;background:var(--gold);color:#07090D;font-family:'Barlow',sans-serif;font-weight:800;font-size:16px;padding:18px 24px;border-radius:3px;text-decoration:none;letter-spacing:0.02em;transition:all .2s;width:100%}
+.cbig:hover{background:var(--gold-l)}
+
+/* ── MENTOR ── */
+.mpw{position:relative;margin-bottom:24px}
+.mphoto{width:100%;border-radius:10px;display:block;border:1px solid rgba(201,168,76,0.15);height:300px;object-fit:cover;object-position:50% 30%}
+.mbadge{position:absolute;bottom:14px;left:14px;right:14px;background:rgba(7,9,13,0.94);border:1px solid rgba(201,168,76,0.25);border-radius:7px;padding:11px 14px;backdrop-filter:blur(10px)}
+.mbv{font-family:'Bebas Neue',sans-serif;font-size:22px;color:var(--gold);line-height:1;letter-spacing:0.03em}
+.mbl{font-size:11px;color:var(--muted);margin-top:2px}
+.mt p{font-size:15px;color:var(--muted);line-height:1.8;margin-bottom:14px}
+.mt p strong{color:var(--text)}
+.mt p em{color:var(--gold);font-style:normal;font-weight:600}
+.mstats{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:20px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06);border:1px solid rgba(201,168,76,0.1);border-radius:6px;overflow:hidden}
+.ms{padding:14px 10px;text-align:center;border-right:1px solid rgba(201,168,76,0.1)}
+.ms:last-child{border-right:none}
+.ms-v{font-family:'Bebas Neue',sans-serif;font-size:clamp(18px,4.5vw,26px);color:var(--gold);letter-spacing:0.03em;line-height:1}
+.ms-l{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:0.08em;margin-top:3px}
+
+/* ── PROOFS ── */
+.pr-lbl{text-align:center;font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--dim);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:10px}
+.pr-lbl::before,.pr-lbl::after{content:'';flex:1;max-width:36px;height:1px;background:rgba(201,168,76,0.15)}
+.pr-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.pcard{background:var(--d4);border:1px solid rgba(201,168,76,0.08);border-radius:8px;overflow:hidden}
+.pcard img{width:100%;display:block;height:130px;object-fit:cover;object-position:top center}
+.pcard-info{padding:9px 11px}
+.pcard-v{font-family:'Bebas Neue',sans-serif;font-size:16px;color:var(--gold);letter-spacing:0.03em;line-height:1.1}
+.pcard-d{font-size:10px;color:var(--dim);margin-top:2px;line-height:1.3}
+
+/* ── FINAL ── */
+.final-wrap{text-align:center}
+.final-wrap h2{font-size:clamp(40px,10vw,88px);margin-bottom:16px}
+.final-wrap p{font-size:15px;color:var(--muted);margin:0 auto 28px;line-height:1.75}
+.final-wrap p strong{color:var(--text)}
+.fnote{margin-top:14px;font-size:11px;color:var(--dim);display:flex;align-items:center;justify-content:center;gap:6px}
+.fnote::before{content:'';width:6px;height:6px;border-radius:50%;background:#2ECC71}
+
+/* ── FOOTER ── */
+footer{background:var(--dark);border-top:1px solid rgba(255,255,255,0.05);padding:20px 18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:11px;color:var(--dim)}
+.fmethod{font-size:9px;color:var(--dim);letter-spacing:0.08em;text-transform:uppercase;margin-top:2px}
+
+/* ── DESKTOP ── */
 @media(min-width:768px){
-  nav{padding:15px 48px}
-  .nlogo img{height:38px}
-  section,.gallery,.proofs{padding:100px 64px}
-  .hcontent{padding:0 64px;max-width:680px}
-  .hphoto{opacity:0.65;object-position:top center;-webkit-mask-image:linear-gradient(to right,transparent 0%,black 45%),linear-gradient(to top,black 55%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,black 45%),linear-gradient(to top,black 55%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}
-  .hover{background:linear-gradient(90deg,rgba(7,9,13,1) 36%,rgba(7,9,13,0.5) 62%,rgba(7,9,13,0.05) 100%)}
-  .hlogo{height:56px}
-  .hnums{display:flex;gap:40px}
-  .hcta{width:auto;display:inline-flex}
+  nav{padding:14px 48px}
+  .nlogo img{height:36px}
+  .ncta{padding:10px 24px;font-size:14px}
+  .hc{padding:0 64px;max-width:680px}
+  .hero-img{opacity:0.62;-webkit-mask-image:linear-gradient(to right,transparent 0%,black 40%),linear-gradient(to top,black 50%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,black 40%),linear-gradient(to top,black 50%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect}
+  .hero-overlay{background:linear-gradient(90deg,rgba(7,9,13,1) 34%,rgba(7,9,13,0.45) 60%,rgba(7,9,13,0.05) 100%)}
+  .hlogo{height:52px;margin-bottom:12px}
+  .hnums{display:flex;gap:36px;border:none;border-radius:0;overflow:visible}
+  .hn{padding:0;border-right:none}
+  .hn-v{font-size:32px}
+  .hn-l{font-size:11px}
+  .hcta{width:auto;display:inline-flex;font-size:16px;padding:17px 40px}
   .hnote{justify-content:flex-start}
+  .sec{padding:90px 64px}
+  .reality-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
   .screens{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:0}
   .sc img{max-height:none}
-  .sc.tall{grid-row:span 2}
-  .rg{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
-  .gal-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}
-  .gal-card img{height:320px}
-  .gal-card.wide{grid-column:span 2}
-  .gal-card.wide img{height:400px}
-  .sei-box{padding:64px}
-  .sei-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
-  .mg{display:grid;grid-template-columns:420px 1fr;gap:80px;align-items:start}
-  .mpw{margin-bottom:0}
-  .mphoto{max-height:none;object-position:center 20%}
-  .mstats{display:flex;gap:36px}
-  .pr-grid{grid-template-columns:repeat(4,1fr);gap:14px}
-  .pcard img{height:auto}
-  .final{padding:120px 64px}
-  .cbig{width:auto}
+  .sc-tall{grid-row:span 2}
   .cta-inline{width:auto;display:inline-flex;margin-top:0}
-  footer{padding:26px 64px}
+  .cta-block{margin-top:28px}
+  .gal-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+  .gal-card img{height:300px}
+  .gal-wide{grid-column:span 2}
+  .gal-wide img{height:380px}
+  .mentor-grid{display:grid;grid-template-columns:400px 1fr;gap:72px;align-items:start}
+  .mpw{margin-bottom:0}
+  .mphoto{height:480px;object-position:50% 20%}
+  .mstats{margin-top:0;border:none;border-top:1px solid rgba(255,255,255,0.06);border-radius:0;padding-top:24px;display:flex;gap:32px}
+  .ms{padding:0;border-right:none;text-align:left}
+  .pr-grid{grid-template-columns:repeat(4,1fr);gap:12px}
+  .pcard img{height:auto}
+  .sei-box{padding:56px 48px}
+  .sei-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .cbig{width:auto;display:inline-flex;font-size:17px;padding:20px 52px}
+  footer{padding:24px 64px}
 }
 </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <a href="#" class="nlogo"><img src="images/logo.svg" alt="Nutra Global"></a>
   <a href="https://form.typeform.com/to/okwEajEE" target="_blank" class="ncta">Quero aplicar</a>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-  <div class="hbg"></div>
-  <img class="hphoto" src="images/hero.jpg" alt="Iago Lolobrigida" loading="eager">
-  <div class="hover"></div>
-  <div class="hcontent">
+<div class="hero">
+  <img class="hero-img" src="images/hero.jpg" alt="Iago Lolobrigida" loading="eager">
+  <div class="hero-overlay"></div>
+  <div class="hc">
     <div class="htag"><span class="htag-dot"></span>Vagas abertas · Seleção pessoal</div>
     <div class="hflags">🇺🇸 🇬🇧 🇩🇪 🇫🇷 🇪🇸 🇳🇱 🇮🇹</div>
     <img src="images/logo.svg" alt="Nutra Global" class="hlogo">
-    <div class="method-name">Método Nutra Global</div>
+    <div class="hmethod">Método Nutra Global</div>
     <h1>NUTRA<br><em>GLOBAL</em></h1>
     <p class="hsub">Vou abrir os bastidores da minha operação de nutraceuticos no <strong>mercado global</strong> — ticket alto, cliente que compra sem desconto, concorrência que quase não existe.</p>
     <div class="hnums">
-      <div><div class="hn-v">R$34M+</div><div class="hn-l">Faturado 2025</div></div>
-      <div><div class="hn-v">R$352k</div><div class="hn-l">Em 1 dia</div></div>
-      <div><div class="hn-v">7+</div><div class="hn-l">Mercados</div></div>
+      <div class="hn"><div class="hn-v">R$34M+</div><div class="hn-l">Faturado 2025</div></div>
+      <div class="hn"><div class="hn-v">R$352k</div><div class="hn-l">Em 1 dia</div></div>
+      <div class="hn"><div class="hn-v">7+</div><div class="hn-l">Mercados</div></div>
     </div>
-    <a href="https://form.typeform.com/to/okwEajEE" target="_blank" class="hcta">Quero entender como funciona <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="https://form.typeform.com/to/okwEajEE" target="_blank" class="hcta">
+      Quero entender como funciona
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
     <p class="hnote">Vagas limitadas — seleção pessoal do Iago</p>
   </div>
-</section>
+</div>
 
 <!-- REALITY -->
-<section class="reality">
-  <div class="container">
-    <div class="rg">
-      <div class="rt">
-        <div class="ey">A oportunidade</div>
-        <h2>ESSA PODE SER<br>SUA <em>NOVA REALIDADE</em></h2>
-        <p>Os prints abaixo são da minha operação rodando <strong>agora mesmo</strong>, do Brasil, vendendo nutraceuticos para o mundo.</p>
-        <p>Sem edição. Sem filtro. <em>Isso é o que acontece quando você entra no mercado certo, na hora certa.</em></p>
-        <p>Ticket alto, produto com demanda gigantesca na Europa e nos EUA — e o brasileiro ainda mal descobriu esse mercado.</p>
+<div class="sec sec-d2">
+  <div class="reality-grid">
+    <div class="reality-text">
+      <div class="ey">A oportunidade</div>
+      <h2>ESSA PODE SER<br>SUA <em>NOVA REALIDADE</em></h2>
+      <p>Os prints abaixo são da minha operação rodando <strong>agora mesmo</strong>, do Brasil, vendendo nutraceuticos para o mundo.</p>
+      <p>Sem edição. Sem filtro. <em>Isso é o que acontece quando você entra no mercado certo, na hora certa.</em></p>
+      <p>Ticket alto, produto com demanda gigantesca na Europa e nos EUA — e o brasileiro ainda mal descobriu esse mercado.</p>
+      <div class="cta-block">
         <a href="https://form.typeform.com/to/okwEajEE" target="_blank" class="cta-inline">Quero entrar nesse mercado →</a>
       </div>
-      <div class="screens">
-        <div class="sc tall"><img src="images/fat2025.jpg" alt="R$34M 2025" loading="lazy"></div>
-        <div class="sc"><img src="images/v352.jpg" alt="R$352k dia" loading="lazy"></div>
-        <div class="sc"><img src="images/notif2.jpg" alt="Notificações" loading="lazy"></div>
-      </div>
+    </div>
+    <div class="screens">
+      <div class="sc sc-tall"><img src="images/fat2025.jpg" alt="R$34M 2025" loading="lazy" class="tall-sc" style="height:100%;max-height:260px"></div>
+      <div class="sc"><img src="images/chart352.jpg" alt="R$352k gráfico" loading="lazy" style="height:120px"></div>
+      <div class="sc"><img src="images/notif_multi.jpg" alt="Notificações" loading="lazy" style="height:120px;object-position:top center"></div>
     </div>
   </div>
-</section>
+</div>
 
 <!-- GALLERY -->
-<section class="gallery">
-  <div class="container">
-    <div class="ey">O estilo de vida que isso gera</div>
-    <h2>DO BRASIL PARA<br><em>O MUNDO INTEIRO</em></h2>
-    <div class="gal-grid">
-      <div class="gal-card wide">
-        <img src="images/dubai.jpg" alt="Dubai" style="object-position:center 30%" loading="lazy">
-        <div class="gal-caption"><strong>Dubai, Emirados Árabes</strong><span>Operação rodando de qualquer lugar</span></div>
-      </div>
-      <div class="gal-card">
-        <img src="images/como.jpg" alt="Lago de Como" style="object-position:center 60%" loading="lazy">
-        <div class="gal-caption"><strong>Lago de Como, Itália</strong><span>Liberdade geográfica total</span></div>
-      </div>
-      <div class="gal-card">
-        <img src="images/paris.jpg" alt="Paris" style="object-position:center 40%" loading="lazy">
-        <div class="gal-caption"><strong>Paris, França</strong><span>R$352k no dia, Torre Eiffel à noite</span></div>
-      </div>
-      <div class="gal-card">
-        <img src="images/hero.jpg" alt="Buenos Aires" style="object-position:center 15%" loading="lazy">
-        <div class="gal-caption"><strong>Buenos Aires, Argentina</strong><span>Negócios sem fronteiras</span></div>
-      </div>
+<div class="sec">
+  <div class="ey">O estilo de vida que isso gera</div>
+  <h2>DO BRASIL PARA<br><em>O MUNDO INTEIRO</em></h2>
+  <div class="gal-grid">
+    <div class="gal-card gal-wide">
+      <img src="images/dubai.jpg" alt="Dubai" style="object-position:50% 35%" loading="lazy">
+      <div class="gal-cap"><strong>Dubai, Emirados Árabes</strong><span>Operação rodando de qualquer lugar</span></div>
+    </div>
+    <div class="gal-card">
+      <img src="images/lambo.jpg" alt="Dubai Lamborghini" style="object-position:50% 30%" loading="lazy">
+      <div class="gal-cap"><strong>Dubai · Bastidores</strong><span>Liberdade financeira real</span></div>
+    </div>
+    <div class="gal-card">
+      <img src="images/como.jpg" alt="Lago de Como" style="object-position:50% 55%" loading="lazy">
+      <div class="gal-cap"><strong>Lago de Como, Itália</strong><span>Liberdade geográfica total</span></div>
+    </div>
+    <div class="gal-card">
+      <img src="images/paris.jpg" alt="Paris" style="object-position:50% 35%" loading="lazy">
+      <div class="gal-cap"><strong>Paris, França</strong><span>R$352k no dia, Torre Eiffel à noite</span></div>
+    </div>
+    <div class="gal-card">
+      <img src="images/bsas.jpg" alt="Buenos Aires" style="object-position:50% 12%" loading="lazy">
+      <div class="gal-cap"><strong>Buenos Aires, Argentina</strong><span>Negócios sem fronteiras</span></div>
     </div>
   </div>
-</section>
+</div>
 
 <!-- FOR YOU -->
-<section class="foryou">
-  <div class="container">
-    <div class="ey">Essa mentoria é pra você se</div>
-    <h2>VOCÊ SE RECONHECE<br><em>EM ALGUM DESSES PONTOS</em></h2>
-    <div class="filist">
-      <div class="fi"><div class="fi-n">01</div><div><strong>Você trabalha com tráfego pago e quer um mercado com margem real</strong><span>Info, nutra ou físico — e está cansado de brigar por centavo num mercado saturado.</span></div></div>
-      <div class="fi"><div class="fi-n">02</div><div><strong>Você está começando e quer entrar no jogo certo desde o início</strong><span>Sem perder anos em mercados lotados — direto num segmento com espaço enorme pra crescer.</span></div></div>
-      <div class="fi"><div class="fi-n">03</div><div><strong>Você já tem operação rodando mas está cansado de escalar com dificuldade</strong><span>Produto clonado, margem sumindo, lucro que não aparece. Você quer uma alternativa real e comprovada.</span></div></div>
-      <div class="fi"><div class="fi-n">04</div><div><strong>Você quer ver prova real — não mais método genérico sem resultado</strong><span>Chega de curso que ensina teoria. Você quer os bastidores de uma operação que fatura de verdade.</span></div></div>
-      <div class="fi"><div class="fi-n">05</div><div><strong>Você está disposto a montar uma operação diferente do que todo mundo faz</strong><span>Enquanto outros brigam no mercado brasileiro, você vai operar onde os grandes players ainda não chegaram.</span></div></div>
-    </div>
+<div class="sec sec-d2">
+  <div class="ey">Essa mentoria é pra você se</div>
+  <h2>VOCÊ SE RECONHECE<br><em>EM ALGUM DESSES PONTOS</em></h2>
+  <div class="filist">
+    <div class="fi"><div class="fi-n">01</div><div><strong>Você trabalha com tráfego pago e quer margem real</strong><span>Info, nutra ou físico — cansado de brigar por centavo num mercado saturado.</span></div></div>
+    <div class="fi"><div class="fi-n">02</div><div><strong>Você está começando e quer entrar no jogo certo desde o início</strong><span>Sem perder anos em mercados lotados — direto num segmento com espaço enorme pra crescer.</span></div></div>
+    <div class="fi"><div class="fi-n">03</div><div><strong>Você tem operação rodando mas está cansado de escalar com dificuldade</strong><span>Produto clonado, margem sumindo, lucro que não aparece. Você quer uma alternativa real.</span></div></div>
+    <div class="fi"><div class="fi-n">04</div><div><strong>Você quer prova real — não mais método genérico sem resultado</strong><span>Chega de curso que ensina teoria. Você quer os bastidores de uma operação que fatura de verdade.</span></div></div>
+    <div class="fi"><div class="fi-n">05</div><div><strong>Você está disposto a montar uma operação diferente do que todo mundo faz</strong><span>Enquanto outros brigam no mercado brasileiro, você vai operar onde os grandes ainda não chegaram.</span></div></div>
   </div>
-</section>
+</div>
 
 <!-- SEI -->
-<section class="sei">
-  <div class="container">
-    <div class="sei-box">
-      <div class="ey" style="justify-content:center;margin-bottom:18px">Não importa onde você está agora</div>
-      <h2 style="margin-bottom:14px">EU VOU TE MOSTRAR<br>COMO <em>ENTRAR NESSE JOGO</em></h2>
-      <p class="sei-lead">Vou abrir minha operação pra você e te guiar com tudo que levei anos <strong>e muito dinheiro pra descobrir.</strong></p>
-      <div class="sei-grid">
-        <div class="sei-item">Mesmo que nunca tenha vendido fora do Brasil</div>
-        <div class="sei-item">Mesmo que não entenda de copywriting, funil ou VSL</div>
-        <div class="sei-item">Mesmo que não fale nenhum idioma além do português</div>
-        <div class="sei-item">Mesmo que não tenha equipe, produto ou estrutura</div>
-        <div class="sei-item">Mesmo que sua única experiência seja algo que não funcionou</div>
-        <div class="sei-item">Mesmo que não tenha capital grande para começar</div>
-      </div>
-      <p class="sei-closer">O que você precisa já está construído.</p>
-      <p class="sei-punch">EU SÓ VOU TE MOSTRAR<br><em>COMO ENTRAR.</em></p>
-      <a href="https://form.typeform.com/to/okwEajEE" target="_blank" class="cbig">Quero aplicar agora <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+<div class="sec">
+  <div class="sei-box">
+    <div class="ey" style="justify-content:center;margin-bottom:14px">Não importa onde você está agora</div>
+    <h2 style="margin-bottom:12px">EU VOU TE MOSTRAR<br>COMO <em>ENTRAR NESSE JOGO</em></h2>
+    <p class="sei-lead">Vou abrir minha operação pra você e te guiar com tudo que levei anos <strong>e muito dinheiro pra descobrir.</strong></p>
+    <div class="sei-grid">
+      <div class="sei-item">Mesmo que nunca tenha vendido fora do Brasil</div>
+      <div class="sei-item">Mesmo que não entenda de copywriting, funil ou VSL</div>
+      <div class="sei-item">Mesmo que não fale nenhum idioma além do português</div>
+      <div class="sei-item">Mesmo que não tenha equipe, produto ou estrutura</div>
+      <div class="sei-item">Mesmo que sua única experiência seja algo que não funcionou</div>
+      <div class="sei-item">Mesmo que não tenha capital grande para começar</div>
     </div>
+    <p class="sei-closer">O que você precisa já está construído.</p>
+    <p class="sei-punch">EU SÓ VOU TE MOSTRAR<br><em>COMO ENTRAR.</em></p>
+    <a href="https://form.typeform.com/to/okwEajEE" target="_blank" class="cbig">
+      Quero aplicar agora
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
   </div>
-</section>
+</div>
 
 <!-- MENTOR -->
-<section class="mentor">
-  <div class="container">
-    <div class="mg">
-      <div class="mpw">
-        <img src="images/como.jpg" alt="Iago Lolobrigida" class="mphoto" loading="lazy">
-        <div class="mbadge">
-          <div class="mbv">R$100M+ Faturados</div>
-          <div class="mbl">No mercado global de nutraceuticos</div>
-        </div>
+<div class="sec sec-d2">
+  <div class="mentor-grid">
+    <div class="mpw">
+      <img src="images/como.jpg" alt="Iago Lolobrigida — Lago de Como" class="mphoto" loading="lazy">
+      <div class="mbadge">
+        <div class="mbv">R$100M+ Faturados</div>
+        <div class="mbl">No mercado global de nutraceuticos</div>
       </div>
-      <div class="mt">
-        <div class="ey">Quem é Iago Lolobrigida</div>
-        <h2>OPERADOR.<br>NÃO <em>PALESTRANTE.</em></h2>
-        <p>Sou o Iago Lolobrigida. Entrei no mercado digital determinado a construir uma operação real — não uma presença digital.</p>
-        <p>Foi esse processo que me levou a descobrir o <strong>mercado global de nutraceuticos</strong> e a construir uma operação que já passou de <em>R$100 milhões faturados</em> — do Brasil, para o mundo.</p>
-        <p>Hoje seleciono pessoalmente quem entra na mentoria. Acompanho cada caso de perto. Só faz sentido pra mim trabalhar com quem está disposto a <strong>executar de verdade.</strong></p>
-        <div class="mstats">
-          <div><div class="ms-v">R$100M+</div><div class="ms-l">Total faturado</div></div>
-          <div><div class="ms-v">7+</div><div class="ms-l">Mercados globais</div></div>
-          <div><div class="ms-v">100%</div><div class="ms-l">Do Brasil</div></div>
-        </div>
+    </div>
+    <div class="mt">
+      <div class="ey">Quem é Iago Lolobrigida</div>
+      <h2>OPERADOR.<br>NÃO <em>PALESTRANTE.</em></h2>
+      <p>Sou o Iago Lolobrigida. Entrei no mercado digital determinado a construir uma operação real — não uma presença digital.</p>
+      <p>Foi esse processo que me levou a descobrir o <strong>mercado global de nutraceuticos</strong> e a construir uma operação que já passou de <em>R$100 milhões faturados</em> — do Brasil, para o mundo.</p>
+      <p>Hoje seleciono pessoalmente quem entra na mentoria. Acompanho cada caso de perto. Só faz sentido pra mim trabalhar com quem está disposto a <strong>executar de verdade.</strong></p>
+      <div class="mstats">
+        <div class="ms"><div class="ms-v">R$100M+</div><div class="ms-l">Total faturado</div></div>
+        <div class="ms"><div class="ms-v">7+</div><div class="ms-l">Mercados globais</div></div>
+        <div class="ms"><div class="ms-v">100%</div><div class="ms-l">Do Brasil</div></div>
       </div>
     </div>
   </div>
-</section>
+</div>
 
 <!-- PROOFS -->
-<section class="proofs">
+<div class="sec sec-d3">
   <div class="pr-lbl">Resultados reais · Sem edição · Sem filtro</div>
   <div class="pr-grid">
-    <div class="pcard"><img src="images/v352.jpg" alt="R$352k" loading="lazy"><div class="pcard-info"><div class="pcard-v">R$352.345</div><div class="pcard-d">1 dia · 216 pedidos</div></div></div>
-    <div class="pcard"><img src="images/roas808.jpg" alt="ROAS 8.08" loading="lazy"><div class="pcard-info"><div class="pcard-v">ROAS 8.08</div><div class="pcard-d">Lucro R$15.754</div></div></div>
-    <div class="pcard"><img src="images/notif_multi.jpg" alt="Notificações multi-moeda" loading="lazy"><div class="pcard-info"><div class="pcard-v">$, £, € ao vivo</div><div class="pcard-d">Vendas multi-moeda em tempo real</div></div></div>
-    <div class="pcard"><img src="images/notif3.jpg" alt="Notificações" loading="lazy"><div class="pcard-info"><div class="pcard-v">Vendas 24h</div><div class="pcard-d">Operando enquanto dorme</div></div></div>
-    <div class="pcard"><img src="images/v96.jpg" alt="R$96k" loading="lazy"><div class="pcard-info"><div class="pcard-v">R$96.840</div><div class="pcard-d">51 pedidos no dia</div></div></div>
-    <div class="pcard"><img src="images/notif.jpg" alt="Notificações $" loading="lazy"><div class="pcard-info"><div class="pcard-v">Vendas em $</div><div class="pcard-d">Múltiplas por hora</div></div></div>
-    <div class="pcard"><img src="images/dash_lucro.jpg" alt="Lucro R$3.3M" loading="lazy"><div class="pcard-info"><div class="pcard-v">R$3.390.205</div><div class="pcard-d">Lucro líquido · R$4,9M em ads</div></div></div>
-    <div class="pcard"><img src="images/fat2025.jpg" alt="Faturamento" loading="lazy"><div class="pcard-info"><div class="pcard-v">R$34.225.501</div><div class="pcard-d">Faturamento 2025</div></div></div>
+    <div class="pcard"><img src="images/v352.jpg" loading="lazy"><div class="pcard-info"><div class="pcard-v">R$352.345</div><div class="pcard-d">1 dia · 216 pedidos</div></div></div>
+    <div class="pcard"><img src="images/roas808.jpg" loading="lazy"><div class="pcard-info"><div class="pcard-v">ROAS 8.08</div><div class="pcard-d">Lucro R$15.754</div></div></div>
+    <div class="pcard"><img src="images/notif_multi.jpg" loading="lazy" style="object-position:top"><div class="pcard-info"><div class="pcard-v">$, £, € ao vivo</div><div class="pcard-d">Vendas multi-moeda</div></div></div>
+    <div class="pcard"><img src="images/notif3.jpg" loading="lazy"><div class="pcard-info"><div class="pcard-v">Vendas 24h</div><div class="pcard-d">Operando enquanto dorme</div></div></div>
+    <div class="pcard"><img src="images/v96.jpg" loading="lazy"><div class="pcard-info"><div class="pcard-v">R$96.840</div><div class="pcard-d">51 pedidos no dia</div></div></div>
+    <div class="pcard"><img src="images/notif.jpg" loading="lazy"><div class="pcard-info"><div class="pcard-v">Notificações</div><div class="pcard-d">Vendas aprovadas</div></div></div>
+    <div class="pcard"><img src="images/dash_lucro.jpg" loading="lazy"><div class="pcard-info"><div class="pcard-v">R$3.390.205</div><div class="pcard-d">Lucro líquido</div></div></div>
+    <div class="pcard"><img src="images/fat2025.jpg" loading="lazy"><div class="pcard-info"><div class="pcard-v">R$34.225.501</div><div class="pcard-d">Faturamento 2025</div></div></div>
   </div>
-</section>
+</div>
 
 <!-- FINAL CTA -->
-<section class="final" id="aplicar">
-  <div class="container">
+<div class="sec sec-d2" id="aplicar">
+  <div class="final-wrap">
     <div class="ey" style="justify-content:center">Próximo passo</div>
     <h2>PRONTO PARA<br><em>OPERAR GLOBAL?</em></h2>
     <p>Se você for selecionado, eu monto um <strong>plano de ação personalizado pro seu caso</strong> e te acompanho para escalar no mercado global de nutraceuticos.</p>
-    <a href="https://form.typeform.com/to/okwEajEE" target="_blank" class="cbig">Quero aplicar agora <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+    <a href="https://form.typeform.com/to/okwEajEE" target="_blank" class="cbig">
+      Quero aplicar agora
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
     <p class="fnote">Vagas limitadas — seleção pessoal do Iago</p>
   </div>
-</section>
+</div>
 
 <footer>
   <div>
-    <img src="images/logo.svg" alt="Nutra Global" style="height:36px;width:auto">
+    <img src="images/logo.svg" alt="Nutra Global" style="height:32px;width:auto;display:block">
     <div class="fmethod">por Iago Lolobrigida</div>
   </div>
   <div>© 2025 Iago Lolobrigida · Todos os direitos reservados</div>
